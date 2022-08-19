@@ -7,7 +7,6 @@ parser = argparse.ArgumentParser(description='Test for network availability.')
 parser.add_argument('--desthost', default='google.com', type=str, help='An connection will be attempted against this hostname')
 parser.add_argument('--destport', default='443',help='A connection will be attempted using this port number')
 parser.add_argument('--proto', default='https',help='This will typically be https')
-
 args = parser.parse_args()
 
 def basicnetworktest():
